@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:movie_app/App/Presentation/Views/Screens/Details_Screen/Details_Screen.dart';
 import 'package:movie_app/App/Presentation/Views/Screens/Splash_Screen/splash_screen.dart';
 import 'package:movie_app/App/core/Styles/constants.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SplashView(),
+      home: DetailsScreen(),
     );
   }
 }

@@ -10,7 +10,7 @@ class EmityScreen extends StatelessWidget {
       appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Constants.kPrimaryColor,
-          title: Text(
+          title: const Text(
             "There is no Screen here",
           ),
           centerTitle: true),

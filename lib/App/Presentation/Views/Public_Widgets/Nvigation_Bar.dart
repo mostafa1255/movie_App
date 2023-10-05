@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/App/Presentation/Views/Screens/Details_Screen/Details_Screen.dart';
+import 'package:movie_app/App/Presentation/Views/Screens/Discover_Screen/Discover_Screen.dart';
 import 'package:movie_app/App/Presentation/Views/Screens/Empity_Sreen.dart/Empty_Screen.dart';
 import 'package:movie_app/App/Presentation/Views/Screens/Home/home_screen.dart';
 import 'package:movie_app/App/core/Styles/constants.dart';
@@ -14,7 +14,7 @@ class NavigationBarScreen extends StatefulWidget {
 class _NavigationBarState extends State<NavigationBarScreen> {
   List screens = [
     const HomeScreen(),
-    const DetailsScreen(),
+    const DiscoverScreen(),
     const EmityScreen()
   ];
   int slectedIndex = 0;
