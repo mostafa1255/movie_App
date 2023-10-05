@@ -5,8 +5,9 @@ import '../../../../../core/Styles/text_Style.dart';
 class ReleaseDateandGenreWidget extends StatelessWidget {
   const ReleaseDateandGenreWidget({
     super.key,
-    required this.device,
+    required this.device, required this.releaseData,
   });
+  final String releaseData;
 
   final Size device;
 
@@ -24,7 +25,7 @@ class ReleaseDateandGenreWidget extends StatelessWidget {
               height: device.height * 0.015,
             ),
             Text(
-              "December 9, 2017",
+              releaseData,
               style: Textstyle.style12(context: context)
                   .copyWith(color: Colors.grey),
             )

@@ -104,11 +104,9 @@ class HomeListView extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Center(
-                                child: Flexible(
-                                  child: Text(
-                                    state.movies[index].title.toString(),
-                                    style: Textstyle.style16(context: context),
-                                  ),
+                                child: Text(
+                                  state.movies[index].title.toString(),
+                                  style: Textstyle.style16(context: context),
                                 ),
                               ),
                             ),

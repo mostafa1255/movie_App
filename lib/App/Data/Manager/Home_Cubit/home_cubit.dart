@@ -12,7 +12,6 @@ class HomeCubit extends Cubit<HomeState> {
   Future<void> fetchForYouMovie() async {
     emit(HomeLoading());
     var result = await homeRepo.fetchForYoumovie();
-    print(result.toString());
     result.fold((faliure) {
       emit(HomeFaliureForyou(errMessage: faliure.errmessage));
     }, (movies) {

@@ -4,8 +4,11 @@ class TimeandRateWidget extends StatelessWidget {
   const TimeandRateWidget({
     super.key,
     required this.device,
+    required this.time,
+    required this.rating,
   });
-
+  final String time;
+  final String rating;
   final Size device;
 
   @override
@@ -16,7 +19,7 @@ class TimeandRateWidget extends StatelessWidget {
         SizedBox(
           width: device.width * 0.03,
         ),
-        const Text("150 minutes"),
+        Text(time),
         SizedBox(
           width: device.width * 0.1,
         ),
@@ -27,7 +30,7 @@ class TimeandRateWidget extends StatelessWidget {
         SizedBox(
           width: device.width * 0.025,
         ),
-        const Text("7.0  (IMDB)"),
+        Text("$rating  (IMDB)"),
       ],
     );
   }

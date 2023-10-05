@@ -1,39 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/App/Presentation/Views/Public_Widgets/CustomMovieImage.dart';
 import 'package:movie_app/App/core/Styles/text_Style.dart';
 import 'MovieDetailsListView.dart';
 import 'ReleaseDateandGenreWidget.dart';
 import 'TimeandRateWidget.dart';
-import 'customMovieImageDetail.dart';
 
 class DetailsScreenBody extends StatelessWidget {
-  const DetailsScreenBody({super.key});
-
+  const DetailsScreenBody(
+      {super.key,
+      required this.imageUrl,
+      required this.title,
+      required this.time,
+      required this.rating,
+      required this.releaseData,
+      required this.summary});
+  final String imageUrl;
+  final String title;
+  final String time;
+  final String rating;
+  final String releaseData;
+  final String summary;
   @override
   Widget build(BuildContext context) {
     Size device = MediaQuery.sizeOf(context);
 
     return SingleChildScrollView(
-        child: SafeArea(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          customMovieImageDetail(device: device),
           SizedBox(
-            height: device.height * 0.03,
-          ),
+              width: device.width,
+              height: device.height * 0.4,
+              child: CustomMovieImage(urlImage: imageUrl)),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: device.width * 0.05),
+            padding: EdgeInsets.symmetric(horizontal: device.width * 0.03),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: device.height * 0.03,
+                ),
                 Text(
-                  "Star Wars: The Last Jedi",
+                  title,
                   style: Textstyle.style24(context: context),
                 ),
                 SizedBox(
                   height: device.height * 0.03,
                 ),
-                TimeandRateWidget(device: device),
+                TimeandRateWidget(
+                  device: device,
+                  rating: rating,
+                  time: time,
+                ),
                 SizedBox(
                   height: device.height * 0.02,
                 ),
@@ -46,7 +64,10 @@ class DetailsScreenBody extends StatelessWidget {
                 SizedBox(
                   height: device.height * 0.02,
                 ),
-                ReleaseDateandGenreWidget(device: device),
+                ReleaseDateandGenreWidget(
+                  device: device,
+                  releaseData: releaseData,
+                ),
                 SizedBox(
                   height: device.height * 0.02,
                 ),
@@ -66,7 +87,7 @@ class DetailsScreenBody extends StatelessWidget {
                 SizedBox(
                   height: device.height * 0.02,
                 ),
-                const Text("Movie Summary Here"),
+                Text(summary),
                 SizedBox(
                   height: device.height * 0.03,
                 ),
@@ -80,9 +101,9 @@ class DetailsScreenBody extends StatelessWidget {
                 MovieDetailsListView(device: device)
               ],
             ),
-          )
+          ),
         ],
       ),
-    ));
+    );
   }
 }

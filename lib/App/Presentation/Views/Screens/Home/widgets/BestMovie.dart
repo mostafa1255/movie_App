@@ -58,11 +58,9 @@ class BestMovie extends StatelessWidget {
                           SizedBox(
                             width: device.width * 0.05,
                           ),
-                          Flexible(
-                            child: Text(
-                              state.movies[8].title.toString(),
-                              style: Textstyle.style16(context: context),
-                            ),
+                          Text(
+                            state.movies[8].title.toString(),
+                            style: Textstyle.style16(context: context),
                           )
                         ],
                       ),
