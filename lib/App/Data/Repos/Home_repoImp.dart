@@ -1,23 +1,27 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+import 'package:movie_app/App/Data/models/movies_model/action.dart';
+import 'package:movie_app/App/Data/models/movies_model/foryou.dart';
 import 'package:movie_app/App/Data/models/movies_model/movies_model.dart';
 import 'package:movie_app/App/core/Tools/app_links.dart';
 import '../../core/Tools/api_Services.dart';
 import '../../core/Tools/app_error_handler.dart';
 import '../../core/Tools/failure_model.dart';
 
-class HomeRepo {
+class HomeRepoImp {
   final ApiServeces apiServeces;
-  HomeRepo(this.apiServeces);
+  HomeRepoImp(this.apiServeces);
 
-  Future<Either<Faliure, List<MoviesModel>>> fetchForYoumovie() async {
+  Future<Either<Faliure, List<Foryou>>> fetchForYoumovie() async {
     try {
       var data = await apiServeces.get(endpoint: Movieget.get);
-      List<MoviesModel> movies = [];
+     
+      List<Foryou> movies = [];
 
       for (var items in data["foryou"]) {
-        movies.add(MoviesModel.fromJson(items));
+        movies.add(Foryou.fromJson(items));
       }
+
       return right(movies);
     } on Exception catch (e) {
       if (e is DioException) {
@@ -27,13 +31,13 @@ class HomeRepo {
     }
   }
 
-  Future<Either<Faliure, List<MoviesModel>>> fetchActionmovie() async {
+  Future<Either<Faliure, List<Action>>> fetchActionmovie() async {
     try {
       var data = await apiServeces.get(endpoint: Movieget.get);
-      List<MoviesModel> movies = [];
+      List<Action> movies = [];
 
       for (var items in data["action"]) {
-        movies.add(MoviesModel.fromJson(items));
+        movies.add(Action.fromJson(items));
       }
       return right(movies);
     } on Exception catch (e) {
