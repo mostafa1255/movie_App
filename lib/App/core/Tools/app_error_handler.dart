@@ -33,7 +33,7 @@ class ServerFaliure extends Faliure {
       return ServerFaliure(response["error"]["message"]);
     } else if (statusCode == 404) {
       return ServerFaliure("Requist Not Found");
-    } else if (statusCode == 500) {
+    } else if (statusCode >= 500) {
       return ServerFaliure("Error in Server , Please Try Again Later");
     } else {
       return ServerFaliure("Opps There is an Error");
