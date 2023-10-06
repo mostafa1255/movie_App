@@ -1,31 +1,17 @@
 # movie_app
 
 Mostafa Yasser
-![Uploading Screenshot_1696611024.png…]()
+
+![Screenshot_1696611024](https://github.com/mostafa1255/movie_App/assets/110611621/f1cf67d6-5133-47f1-9939-9843edaa8627)
+
+![Screenshot_1696611348](https://github.com/mostafa1255/movie_App/assets/110611621/2836b8a3-7a44-4160-a013-969155d374a9)
+
+![Screenshot_1696611356](https://github.com/mostafa1255/movie_App/assets/110611621/b0ed09eb-2db6-4589-b0d6-cc224baa2b81)
+
+Movie App
+is App to Preview Modern Movies in the Worlds
+with Api that Preview :
+
+Title , Cover , Movie Link , Aothur , duration , release Date , Rating
 
 
-Introduction
-A short introduction about yourself here. 2-3 sentences is usually enough to give a overview.
-
-Skills
-List some relevant skills you have
-For example programming languages, tools, etc
-You can include proficiency level - for example React (intermediate)
-Experience
-Job Title 1
-Company Name
-
-Bullet point describing highlights and responsibilities of role
-Keep each point concise
-Job Title 2
-Company Name
-
-Another role's highlights and responsibilities
-Education
-University/College Name
-
-Degree/Certification, Year Graduated
-
-Optionally include GPA, major/minor if relevant
-Contact[Link to LinkedIn](link to your profile)
-email@example.com
