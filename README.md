@@ -1,16 +1,30 @@
 # movie_app
 
-A new Flutter project.
+Mostafa Yasser
+Your Picture
 
-## Getting Started
+Introduction
+A short introduction about yourself here. 2-3 sentences is usually enough to give a overview.
 
-This project is a starting point for a Flutter application.
+Skills
+List some relevant skills you have
+For example programming languages, tools, etc
+You can include proficiency level - for example React (intermediate)
+Experience
+Job Title 1
+Company Name
 
-A few resources to get you started if this is your first Flutter project:
+Bullet point describing highlights and responsibilities of role
+Keep each point concise
+Job Title 2
+Company Name
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Another role's highlights and responsibilities
+Education
+University/College Name
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Degree/Certification, Year Graduated
+
+Optionally include GPA, major/minor if relevant
+Contact[Link to LinkedIn](link to your profile)
+email@example.com
