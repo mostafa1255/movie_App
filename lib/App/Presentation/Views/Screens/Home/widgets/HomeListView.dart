@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:movie_app/App/Data/Manager/Home_Cubit/home_cubit.dart';
 import 'package:movie_app/App/Presentation/Views/Public_Widgets/CustomMovieImage.dart';
 import 'package:movie_app/App/Presentation/Views/Screens/Details_Screen/Details_Screen.dart';
+import 'package:movie_app/App/core/Styles/constants.dart';
 import '../../../../../core/Styles/text_Style.dart';
 
 class HomeListView extends StatelessWidget {
@@ -47,7 +48,7 @@ class HomeListView extends StatelessWidget {
                           width: device.width * 0.7,
                           height: device.height * 0.4,
                           decoration: BoxDecoration(
-                              color: Colors.green,
+                              color: Constants.kPrimaryColor,
                               borderRadius: BorderRadius.circular(50)),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(30),
