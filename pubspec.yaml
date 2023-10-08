@@ -38,11 +38,10 @@ dependencies:
   dio: ^5.3.3
   dartz: ^0.10.1
   get: ^4.6.6
-  scroll_snap_list: ^0.9.1
   bloc: ^8.1.2
   flutter_bloc: ^8.1.3
-  cached_network_image: ^3.3.0
-
+  cached_network_image: ^3.3.0 
+  go_router: ^11.1.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

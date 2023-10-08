@@ -15,7 +15,7 @@ class HomeRepoImp {
   Future<Either<Faliure, List<Foryou>>> fetchForYoumovie() async {
     try {
       var data = await apiServeces.get(endpoint: Movieget.get);
-     
+
       List<Foryou> movies = [];
 
       for (var items in data["foryou"]) {
