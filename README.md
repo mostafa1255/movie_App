@@ -1,16 +1,16 @@
-# movie_app
 
-A new Flutter project.
+Movie App
+is App to Preview Modern Movies in the Worlds
+with Api that Preview :
 
-## Getting Started
+Title , Cover , Movie Link , Aothur , duration , release Date , Rating
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot_1696611024](https://github.com/mostafa1255/movie_App/assets/110611621/f1cf67d6-5133-47f1-9939-9843edaa8627)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot_1696611348](https://github.com/mostafa1255/movie_App/assets/110611621/2836b8a3-7a44-4160-a013-969155d374a9)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1696611356](https://github.com/mostafa1255/movie_App/assets/110611621/b0ed09eb-2db6-4589-b0d6-cc224baa2b81)
+
+
+
